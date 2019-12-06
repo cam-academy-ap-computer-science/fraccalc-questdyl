@@ -1,9 +1,12 @@
 package fracCalc;
-
+import java.util.Scanner;
 public class FracCalc {
 
     public static void main(String[] args) 
     {
+    	Scanner console = new Scanner(System.in);
+    	String input = console.nextLine();
+    	produceAnswer(input);
         // TODO: Read the input from the user and call produceAnswer with an equation
 
     }
@@ -16,10 +19,11 @@ public class FracCalc {
     //        
     // The function should return the result of the fraction after it has been calculated
     //      e.g. return ==> "1_1/4"
+    
     public static String produceAnswer(String input)
     { 
         // TODO: Implement this function to produce the solution to the input
-        
+        int 
         return "";
     }
 
