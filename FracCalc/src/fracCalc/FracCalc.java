@@ -1,3 +1,6 @@
+// The extra credit isn't done, except for error handling with a 0
+
+
 package fracCalc;
 import java.util.Scanner;
 public class FracCalc {
@@ -127,6 +130,7 @@ public class FracCalc {
     		op2num = op2num + (op2whole * op2den);
     	}
     	
+    	
     	//The calculations begin here:
     	int num = 0;
     	int den = 0;
@@ -147,6 +151,9 @@ public class FracCalc {
     	}
     	
     	else if (op.equals("/")) {
+    		if (op2num/op2den == 0) {
+    			return "W̶̡̃͗͗h̴͍͋̅a̴̲̣̥͙̓t̷̮̃̓̐ ̴͖̚̕h̷̙͖͈͍͋a̸̬̱̲͚̋͝v̵͈̥̝́̈́̽e̸̽̃̉́ͅ ̷̦͒̒͑̐ỵ̶͎͚̞̾͌ô̶̥̟̗͘ú̵͈͋̉ ̸͉̩͠d̸͇̘̖̔̌̃o̸̮̚n̵̯͍̋̉̋̕ȅ̴̮̙̗̪͛̄̚?̵̹̭̑͂";
+    		}
     		num = op1num * op2den;
     		den = op1den * op2num;
     	}
