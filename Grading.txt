@@ -1,0 +1,19 @@
+Total Grade:  112/115
+
+Input Parsing: 15/15
+Addition & Subtraction: 20/20
+Multiplication & Division: 15/20
+Fraction Reduction: 15/15
+Output is a Mixed Fraction: 15/15
+Handles Mixed Fractions: 10/10
+Handles Negatives: 15/15
+Code Comments: 5/5
+
+Extra Credit Error Checking: 2/4
+
+Note: You have a few tests that fail, unfortunately, because you have a bug
+that causes division problems to fail if the second number is a fraction less than 1.
+It appears that you only introduced that code trying to do the extra credit.
+You made the mistake by doing division of two integers, which will always return an
+integer, which means that any number that resolves to less than 1 will return 0.
+
